@@ -494,9 +494,9 @@ if [ ! -e ${OPENSSL_ARCHIVE_FILE_NAME} ]; then
 
   # Archive was found, so proceed with download.
   # -O Use server-specified filename for download
-  curl ${CURL_OPTIONS} -O "${OPENSSL_ARCHIVE_URL}"
+  curl ${CURL_OPTIONS} -OL "${OPENSSL_ARCHIVE_URL}"
   # also download the gpg signature from the same location
-  curl ${CURL_OPTIONS} -O "${OPENSSL_ARCHIVE_URL}${OPENSSL_ARCHIVE_SIGNATURE_FILE_EXT}"
+  curl ${CURL_OPTIONS} -OL "${OPENSSL_ARCHIVE_URL}${OPENSSL_ARCHIVE_SIGNATURE_FILE_EXT}"
 
 else
   echo "Using ${OPENSSL_ARCHIVE_FILE_NAME}"
