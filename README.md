@@ -15,16 +15,16 @@ However, this repository focuses more on framework-based setups and also adds ma
 
 # Compile library
 
-Compile OpenSSL 3.2.0 for all targets:
+Compile OpenSSL 3.5.0 for all targets:
 
 ```
-./build-libssl.sh --version=3.2.0
+./build-libssl.sh --version=3.5.0
 ```
 
-Compile OpenSSL 3.2.0 for specific targets:
+Compile OpenSSL 3.5.0 for specific targets:
 
 ```
-./build-libssl.sh --version=3.2.0 --targets="ios64-cross-arm64 macos64-x86_64 macos64-arm64"
+./build-libssl.sh --version=3.5.0 --targets="ios64-cross-arm64 macos64-x86_64 macos64-arm64"
 ```
 
 For all options see:
